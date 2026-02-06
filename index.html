@@ -4,336 +4,91 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sunil GC | Personal Website</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-    }
-
-    header {
-      background-color: #0077b6;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      background-color: #023e8a;
-    }
-
-    nav button {
-      background-color: #023e8a;
-      border: none;
-      color: white;
-      padding: 14px 20px;
-      cursor: pointer;
-      font-size: 16px;
-    }
-
-    nav button:hover {
-      background-color: #03045e;
-    }
-
-    .tab-content {
-      display: none;
-      padding: 20px;
-    }
-
-    .tab-content.active {
-      display: block;
-    }
-
-    section {
-      background-color: white;
-      margin: 20px;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    a {
-      color: #0077b6;
-    }
-  </style>
+  <title>Sunil GC | Home</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header>
-    <h1>Sunil G C</h1>
-    <p> Postdoctoral Research Associate | Precision Agriculture | Computer Vision | AI | Software | Electronics </p>
+  <header class="hero">
+    <div class="hero__bg"></div>
+    <nav class="nav">
+      <div class="nav__brand">Sunil G C</div>
+      <div class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="experience.html">Experience</a>
+        <a href="education.html">Education</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="publications.html">Publications</a>
+        <a href="blog.html">Blog</a>
+        <a href="links.html">Links</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow">Postdoctoral Research Associate</p>
+      <h1>Precision Agriculture · Computer Vision · AI</h1>
+      <p class="hero__lede">I build intelligent systems that turn complex agricultural data into actionable insights — from hyperspectral imaging to robotic weed control.</p>
+      <div class="hero__cta">
+        <a class="btn" href="contact.html">Get in touch</a>
+        <a class="btn btn--ghost" href="publications.html">View publications</a>
+      </div>
+      <div class="hero__stats">
+        <div>
+          <span class="stat__label">Focus</span>
+          <span class="stat__value">AI + Robotics</span>
+        </div>
+        <div>
+          <span class="stat__label">Domain</span>
+          <span class="stat__value">Smart Farming</span>
+        </div>
+        <div>
+          <span class="stat__label">Location</span>
+          <span class="stat__value">Fargo, ND</span>
+        </div>
+      </div>
+    </div>
   </header>
 
-  <nav>
-    <button onclick="showTab('bio')">Biography</button>
-    <button onclick="showTab('contact')">Contact</button>
-    <button onclick="showTab('education')">Education</button>
-    <button onclick="showTab('experience')">Work Experience</button>
-    <button onclick="showTab('teaching')">Teaching</button>
-    <button onclick="showTab('publications')">Publications</button>
-    <button onclick="showTab('links')">Links</button>
-    <button onclick="showTab('hobbies')">Hobbies</button>
-  </nav>
-
-  <div id="bio" class="tab-content active">
-    <section>
-      <h2>Biography</h2>
-     <p><strong>Sunil G. C.</strong> is a researcher, educator, and expert in the fields of precision agriculture, artificial intelligence, and computer vision. With a passion for applying innovative technologies to agriculture, Sunil has made significant contributions to both industry and academia, driving advancements in automated systems, smart farming technologies, and AI-based research. His interdisciplinary background bridges agricultural engineering, robotics, and data science, providing him with a unique perspective on solving complex agricultural challenges.</p>
-
-    <p>In the industry, Sunil has worked extensively as a software engineer, most notably at <strong>Deerwalk Inc.</strong>, Kathmandu, Nepal, where he contributed to the development of big data technologies and scalable systems using Cascading, Hadoop, and Elasticsearch. He also worked on optimizing resource utilization in cloud environments, which led to cost savings and improved performance. In addition to his work on large-scale data processing, Sunil's expertise in embedded systems was further honed during his internship at <strong>AGCO – Appareo Systems</strong> in Fargo, ND, where he contributed to the development and testing of telemetry control systems for vehicles, ensuring the proper implementation of protocols such as CAN bus and J1939.</p>
-
-    <p>As a researcher, Sunil's focus has been on applying AI and machine learning to precision agriculture. He is currently a <strong>Postdoctoral Research Fellow</strong> at USDA-ARS & North Dakota State University, where he leads projects focused on high-throughput phenotyping systems, hyperspectral image data collection, and advanced machine learning models for crop damage classification. His work includes developing software for Region of Interest (ROI) labeling and training algorithms for identifying frost damage in crops like Canola, Camelina, and Strawberry. Sunil is also deeply involved in mentoring graduate students and collaborating on cutting-edge research that combines robotics, AI, and agriculture to create more efficient farming practices.</p>
-
-    <p>Throughout his academic career, Sunil has also been an active educator. He served as a <strong>Teaching Assistant</strong> at North Dakota State University for the course <em>PAG 115: Introduction to Precision Agriculture</em>, where he helped undergraduate students grasp the fundamentals of precision agriculture. He has delivered guest lectures for advanced courses such as <em>ABEN 682: Instrumentation & Measurements</em> and <em>PAG 315: Electronic Systems in Precision Agriculture</em>, providing students with hands-on knowledge of Arduino systems and sensor technologies. Additionally, Sunil taught a computer graphics course at <strong>Janakpur Engineering College</strong> in Nepal, further strengthening his commitment to education and mentorship.</p>
-
-    <p>Sunil's research has been widely published and cited in leading academic journals. His most-cited papers include his studies on deep learning for weed and crop species classification in greenhouse conditions and his work on using AI technology to classify beef cuts. His contributions to advancing AI technologies for precision agriculture are further reflected in recent papers, such as his work on a weed-crop dataset for robotic weed control systems and his development of the "Herschel Vision" software for hyperspectral image processing in machine learning pipelines.</p>
-
-    <p>With a strong foundation in both industry and academia, Sunil G. C. continues to push the boundaries of what is possible in precision agriculture, aiming to make a lasting impact on sustainable farming practices through the use of artificial intelligence and robotics.</p>
-</section>
-  </div>
-
-  <div id="contact" class="tab-content">
-    <section>
-      <h2>Contact Details</h2>
-      <p><strong>Name:</strong> Sunil GC</p>
+  <main>
+    <section class="section">
+      <div class="section__header">
+        <h2>Biography</h2>
+        <p>Researcher, educator, and engineer focused on AI-driven precision agriculture and computer vision.</p>
+      </div>
+      <div class="card">
+        <p><strong>Sunil G. C.</strong> is a researcher, educator, and expert in precision agriculture, artificial intelligence, and computer vision. He applies innovative technologies to agriculture, advancing automated systems, smart farming, and AI-based research. His interdisciplinary background spans agricultural engineering, robotics, and data science.</p>
+        <p>In industry, Sunil worked as a software engineer at <strong>Deerwalk Inc.</strong> in Kathmandu, contributing to big data systems with Cascading, Hadoop, and Elasticsearch, and optimizing cloud resource utilization. He also interned at <strong>AGCO – Appareo Systems</strong> in Fargo, ND, focusing on telemetry control systems and protocols like CAN bus and J1939.</p>
+        <p>As a researcher, he is a <strong>Postdoctoral Research Fellow</strong> at USDA-ARS & North Dakota State University, leading projects on high-throughput phenotyping, hyperspectral data collection, and ML models for crop damage classification. He develops ROI labeling tools and trains algorithms for frost damage identification across crops.</p>
+        <p>Sunil’s academic work includes teaching and mentoring at North Dakota State University and Janakpur Engineering College, with guest lectures and hands-on instruction in precision agriculture, instrumentation, and embedded systems.</p>
+      </div>
     </section>
-  </div>
 
-  <div id="education" class="tab-content">
-    <section>
-      <h2>Education</h2>
-      <ul>
-  <li><strong>Ph.D. in Agriculture & Biosystems Engineering</strong>, North Dakota State University, Fargo, ND <br>
-      <em>2019 – May 2023</em>
-  </li>
-  <li><strong>B.E. in Electronics and Communication Engineering</strong>, IOE – Pulchowk Campus, Lalitpur, Nepal <br>
-      <em>2011 – 2015</em>
-  </li>
-</ul>
+    <section class="section">
+      <div class="section__header">
+        <h2>Highlights</h2>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <h3>Research</h3>
+          <p>High-throughput phenotyping, hyperspectral imaging, and AI models for crop stress and frost damage.</p>
+        </div>
+        <div class="card">
+          <h3>Engineering</h3>
+          <p>Robotics, embedded systems, telemetry testing, and scalable data pipelines.</p>
+        </div>
+        <div class="card">
+          <h3>Education</h3>
+          <p>Teaching, guest lectures, and mentoring in precision agriculture and instrumentation.</p>
+        </div>
+      </div>
     </section>
-  </div>
+  </main>
 
-  <div id="experience" class="tab-content">
-    <section>
-      <h2>Work Experience</h2>
-      <ul>
-  <li>
-    <strong>Postdoctoral Research Fellow</strong>, USDA-ARS & North Dakota State University, Fargo, ND<br>
-    <em>Nov 2023 – Present</em>
-    <ul>
-      <li>Deployed and operated an automated high-throughput phenotyping system for time-series data collection on Canola, Camelina, and Strawberry plants.</li>
-      <li>Processed and analyzed RGB, RGNIR, and hyperspectral images to evaluate genotypes' freezing tolerance.</li>
-      <li>Investigated crop-weed interactions in Canola fields.</li>
-      <li>Developed software tools for ROI labeling and phytodamage quantification based on spectral data.</li>
-      <li>Trained ML models for frost damage classification and segmentation.</li>
-      <li>Published peer-reviewed research and mentored graduate students.</li>
-    </ul>
-  </li>
-
-  <li>
-    <strong>Embedded Software Engineer – Intern</strong>, AGCO – Appareo Systems, Fargo, ND<br>
-    <em>May 2023 – Nov 2023</em>
-    <ul>
-      <li>Developed unit and hardware-in-loop tests for vehicle telemetry control units using pytest.</li>
-      <li>Tested communication protocols including CAN bus, J1939, and UDS.</li>
-      <li>Defined and executed test cases from detailed system requirements.</li>
-    </ul>
-  </li>
-
-  <li>
-    <strong>Graduate Research Assistant</strong>, ABEN, North Dakota State University, Fargo, ND<br>
-    <em>May 2019 – May 2023</em>
-    <ul>
-      <li>Led AI-based computer vision project for a robotic weed control platform using state-of-the-art CNNs (YOLO-v4, EfficientNet, etc.).</li>
-      <li>Developed cross-platform mobile apps for meat cut classification using React Native and Python.</li>
-      <li>Automated invasive plant detection via machine learning and image analysis scripts in Python and Java.</li>
-      <li>Collaborated with Microsoft and university partners to deploy Microsoft FarmBeat Research Kit.</li>
-      <li>Built UAV-based variable rate sprayer, managing the entire software development process.</li>
-    </ul>
-  </li>
-
-  <li>
-    <strong>Software Engineer</strong>, Deerwalk Inc., Kathmandu, Nepal<br>
-    <em>Jan 2017 – Apr 2019</em>
-    <ul>
-      <li>Developed features for “Plan Analytics” using Java, Hadoop, Cascading, and Elasticsearch.</li>
-      <li>Managed big data on AWS platforms (EMR, EC2) and optimized performance with Python and Java scripts.</li>
-      <li>Improved system architecture by evaluating and transitioning to AWS Application Load Balancer.</li>
-      <li>Led workshops and engaged in team research on Spark migration.</li>
-    </ul>
-  </li>
-  <li>
-    <strong>Associate Software Engineer</strong>, Deerwalk Inc., Kathmandu, Nepal<br>
-    <em>Dec 2015 – Dec 2017</em>
-    <ul>
-      <li>Built and maintained data processing pipelines in the Hadoop ecosystem.</li>
-      <li>Upgraded Elasticsearch and ensured backward compatibility of production systems.</li>
-      <li>Performed thorough unit testing and debugging to maintain high software quality.</li>
-    </ul>
-  </li>
-</ul>
-    </section>
-  </div>
-
-  <div id="teaching" class="tab-content">
-    <section>
-      <h2>Teaching Experience</h2>
-      <ul>
-  <li>
-    <strong>Teaching Assistant</strong>, North Dakota State University, Fargo, ND<br>
-    <em>2020 – 2022</em>
-    <ul>
-      <li>Assisted in the undergraduate course <em>PAG 115: Introduction to Precision Agriculture</em>.</li>
-      <li>Supported instruction, graded assignments, and facilitated student learning.</li>
-    </ul>
-  </li>
-
-  <li>
-    <strong>Guest Lecturer</strong>, North Dakota State University, Fargo, ND<br>
-    <em>2022, 2025</em>
-    <ul>
-      <li>Delivered guest lectures for courses including <em>ABEN 682: Instrumentation & Measurements</em> and <em>PAG 315: Electronic Systems in Precision Agriculture</em>.</li>
-      <li>Led three hands-on lab sessions focused on Arduino programming and sensor integration.</li>
-    </ul>
-  </li>
-
-  <li>
-    <strong>Instructor</strong>, Janakpur Engineering College, IOE, Bhaktapur, Nepal<br>
-    <em>2019</em>
-    <ul>
-      <li>Taught the undergraduate course <em>EX 603: Computer Graphics</em> for computer engineering students.</li>
-      <li>Conducted both theoretical classes and practical lab sessions during the semester.</li>
-    </ul>
-  </li>
-</ul>
-
-    </section>
-  </div>
-
-  <div id="publications" class="tab-content">
-    <section>
-      <h2>Publications</h2>
-      <ul>
-  <li>
-    G C, S., Koparan, C., Ahmed, M. R., Zhang, Y., Howatt, K., & Sun, X. (2022). 
-    <em><a href="https://doi.org/10.1016/j.aiia.2022.11.001" target="_blank">
-    A study on deep learning algorithm performance on weed and crop species identification under different image background</a></em>. 
-    Artificial Intelligence in Agriculture, 6, 242–256.
-  </li>
-  <li>
-    G C, S., Zhang, Y., Koparan, C., Ahmed, M. R., Howatt, K., & Sun, X. (2022). 
-    <em><a href="https://doi.org/10.1016/J.JAFR.2022.100325" target="_blank">
-    Weed and crop species classification using computer vision and deep learning technologies in greenhouse conditions</a></em>. 
-    Journal of Agriculture and Food Research, 9, 100325.
-  </li>
-  <li>
-    GC, S., Saidul Md, B., Zhang, Y., Reed, D., Ahsan, M., Berg, E., & Sun, X. (2021). 
-    <em><a href="https://doi.org/10.3389/FSENS.2021.654357" target="_blank">
-    Using Deep Learning Neural Network in Artificial Intelligence Technology to Classify Beef Cuts</a></em>. 
-    Frontiers in Sensors, 0, 5.
-  </li>
-  <li>
-    G C, S., Zhang, Y., Howatt, K., Schumacher, L., & Sun, X. (2024). 
-    <em><a href="https://doi.org/10.13031/ja.15590" target="_blank">
-    Multi-species Weed and Crop Classification Comparison Using Five Different Deep Learning Network Architectures</a></em>. 
-    Journal of the ASABE, 67(2), 43–55.
-  </li>
-  <li>
-    GC, S., Upadhyay, A., Zhang, Y., Howatt, K., Peters, T., Ostlie, M., Aderholdt, W., Sun, X. (2024). 
-    <em><a href="https://doi.org/10.1016/J.ATECH.2024.100538" target="_blank">
-    Field-based multispecies weed and crop detection using ground robots and advanced YOLO models: A data and model-centric approach</a></em>. 
-    Smart Agriculture Technology, 9, 100538.
-  </li>
-  <li>
-    G C, S., Koparan, C., Upadhyay, A., Ahmed, M. R., Zhang, Y., Howatt, K., and Sun, X. (2024). 
-    <em><a href="https://doi.org/10.1016/J.DIB.2024.111097" target="_blank">
-    A Novel Automated Cloud-Based Image Datasets for High Throughput Phenotyping in Weed Classification</a></em>. 
-    Data in Brief, 111097.
-  </li>
-  <li>
-    Upadhyay, A., G C, S., Zhang, Y., Koparan, C., Sun, X. (2024). 
-    <em><a href="https://doi.org/10.1016/J.JAFR.2024.101331" target="_blank">
-    Development and evaluation of a machine vision and deep learning-based smart sprayer system for site-specific weed management in row crops: An edge computing approach</a></em>. 
-    Journal of Agriculture and Food Research, 18, 101331.
-  </li>
-  <li>
-    G C, S., Upadhyay, A., and Sun, X. (2024). 
-    <em><a href="https://doi.org/10.1016/J.ATECH.2024.100678" target="_blank">
-    Development of Software Interface for AI-Driven Weed Control in Robotic Vehicles, with Time-Based Evaluation in Indoor and Field Settings</a></em>. 
-    Smart Agriculture Technology, p. 100678.
-  </li>
-  <li>
-    Paul, N., G C, S., Horvath, D., Sun, X. (2025). 
-    <em><a href="https://doi.org/10.1016/J.COMPAG.2024.109734" target="_blank">
-    Deep learning for plant stress detection: A comprehensive review of technologies, challenges, and future directions</a></em>. 
-    Computers and Electronics in Agriculture, 229, 109734.
-  </li>
-  <li>
-    Ram, B.G., G C, S., & Sun, X. (2025). 
-    <em><a href="https://doi.org/10.1016/J.SOFTX.2025.102089" target="_blank">
-    Herschel vision: A hyperspectral image processing software for data preparation in machine learning pipelines</a></em>. 
-    SoftwareX, 30, 102089.
-  </li>
-  <li>
-    GC, S., Khan, A., Horvath, D., Sun, X. (2025). 
-    <em><a href="https://doi.org/10.1016/j.atech.2025.100851" target="_blank">
-    Evaluation of Multispectral Imaging for Freeze Damage Assessment in Strawberries Using AI-based Computer Vision Technology</a></em>. 
-    Smart Agriculture Technology, 100851.
-  </li>
-  <li>
-    Upadhyay, A., G C, S., Villamil Mahecha, M., Mettler, J., Howatt, K., Aderholdt, W., Ostlie, M., & Sun, X. (2025). 
-    <em><a href="https://doi.org/10.1016/j.dib.2025.111486" target="_blank">
-    Weed-crop dataset in precision agriculture: Resource for AI-based robotic weed control systems</a></em>. 
-    Data in Brief.
-  </li>
-</ul>
-
-    </section>
-  </div>
-
-  <div id="links" class="tab-content">
-    <section>
-      <h2>Professional Links</h2>
-      <ul>
-        <li><a href="https://www.linkedin.com/in/sgc445" target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com/sunilgc7" target="_blank">GitHub</a></li>
-        <li><a href="https://orcid.org/0000-0002-4653-7618" target="_blank">ORCID</a></li>
-        <li><a href="https://scholar.google.com/citations?user=EtjLGYIAAAAJ&hl=en" target="_blank">Google scholar</a></li>
-      </ul>
-    </section>
-  </div>
-  
- <div id="hobbies" class="tab-content">
-  <section>
-    <h2>Hobbies</h2>
-    <ul style="list-style: none; padding: 0; display: flex; gap: 40px; justify-content: center;">
-      <li>
-        <figure style="text-align: center;">
-          <img src="travel-icon.jpg" alt="Traveling Icon" width="200" height="200" style="border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-          <figcaption style="margin-top: 10px; font-size: 1.2em;">Traveling</figcaption>
-        </figure>
-      </li>
-      <li>
-        <figure style="text-align: center;">
-          <img src="hiking-icon.jpg" alt="Hiking Icon" width="200" height="200" style="border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-          <figcaption style="margin-top: 10px; font-size: 1.2em;">Hiking</figcaption>
-        </figure>
-      </li>
-    </ul>
-  </section>
-</div>
-
-  <script>
-    function showTab(tabId) {
-      const tabs = document.querySelectorAll('.tab-content');
-      tabs.forEach(tab => tab.classList.remove('active'));
-      document.getElementById(tabId).classList.add('active');
-    }
-  </script>
+  <footer class="footer">
+    <p>© 2026 Sunil G C · Built with GitHub Pages</p>
+  </footer>
 </body>
 
 </html>
