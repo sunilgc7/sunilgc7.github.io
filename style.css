@@ -237,38 +237,6 @@ main {
   color: var(--accent);
 }
 
-.section__actions {
-  margin-top: 18px;
-}
-
-.link-card {
-  text-align: center;
-  font-weight: 600;
-  transition: transform 0.2s ease;
-}
-
-.link-card:hover {
-  transform: translateY(-4px);
-}
-
-.blog-card h3 {
-  margin-top: 0;
-}
-
-.blog-meta {
-  display: inline-block;
-  margin-top: 10px;
-  font-size: 12px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--muted);
-  font-family: "Manrope", "Helvetica", sans-serif;
-}
-
-.hobbies {
-  align-items: stretch;
-}
-
 .hobby {
   background: var(--card);
   border-radius: 18px;
@@ -288,6 +256,7 @@ main {
 .contact p {
   margin: 8px 0;
 }
+
 
 .footer {
   background: #111118;
